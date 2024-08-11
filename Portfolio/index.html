@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="profile">
+            <img src="./assets/shivamimage.jpeg" alt="Shivam Gupta">
+            <div class="details">
+                <div>
+                    <h2 class="name">Shivam Gupta</h2>
+                    <p class="description">Full Stack Django Developer</p>
+                </div>
+                <a href="./assets/Resume.pdf" download="download">
+                    <button class="resume">Download Resume</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="services-card">
+                <img src="./assets/webdevelopmentservice.jpeg" alt="Web Development Service">
+                <div class="services-card-content">
+                    <h3>Web Development</h3>
+                    <p>Innovative, Responsive, Scalable Web Solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container">
+            <div class="projects-card">
+                <img src="./assets/LockerProtectionProject.png" alt="Locker Protection Project">
+                <div class="projects-card-content">
+                    <h3>Locker Protection</h3>
+                    <p>Secure, reliable, and user-friendly locker protection system ensuring safety and accessibility
+                        for personal assets.</p>
+                </div>
+                <div class="buttons">
+                    <a href="https://lockerprotection-codequillcrafts.onrender.com/"><button>View Live</button></a>
+                    <a href="https://github.com/CodeQuillCrafts/Locker-Protection"><button>View Code</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+            <div class="skills-card">
+                <h3>HTML & CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+            </div>
+            <div class="skills-card">
+                <h3>Javascript</h3>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 95%;"></div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+            </div>
+            <div class="skills-card">
+                <h3>Django</h3>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
